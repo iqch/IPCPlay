@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Optimized|Win32">
+      <Configuration>Optimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Optimized|x64">
+      <Configuration>Optimized</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{70b6a513-b4be-42be-aff8-26cfee40bbad}</ProjectGuid>
+    <RootNamespace>IPCOffline</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>false</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_PREDICATES;USE_SCALAR_IMPLEMENTATION;DIM=3;__STDC_FORMAT_MACROS;LINSYSSOLVER_USE_CHOLMOD;USE_AMGCL;USE_CHOLMOD;NOMINMAX;LIBIGL_WITH_PREDICATES;CCD_WRAPPER_WITH_FPRF;CCD_WRAPPER_WITH_TIGHT_INCLUSION;__TBB_NO_IMPLICIT_LINKAGE=1;_USE_MATH_DEFINES;_VARIADIC_MAX=10;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>F:\Projects\Repos\IPC-master\src;F:\Projects\Repos\IPC-master\src\Energy;F:\Projects\Repos\IPC-master\src\Energy\Physics_Elasticity;F:\Projects\Repos\IPC-master\src\Energy\Geometry_Isometry;F:\Projects\Repos\IPC-master\src\Energy\Connectivity;F:\Projects\Repos\IPC-master\src\Energy\Collision;F:\Projects\Repos\IPC-master\src\CollisionObject;F:\Projects\Repos\IPC-master\src\CCD;F:\Projects\Repos\IPC-master\src\Utils;F:\Projects\Repos\IPC-master\src\Utils\SVD;F:\Projects\Repos\IPC-master\src\LinSysSolver;F:\Projects\Repos\IPC-master\src\TimeStepper;F:\SDK\Suitesparse\AMD\include;F:\SDK\Suitesparse\CAMD\include;F:\SDK\Suitesparse\COLAMD\include;F:\SDK\Suitesparse\CCOLAMD\include;F:\SDK\Suitesparse\CHOLMOD\include;F:\SDK\Suitesparse\SPQR\include;F:\SDK\Suitesparse\SuiteSparse_config\include;F:\SDK\Suitesparse\metis\include;F:\Projects\Repos\IPC-master\external\osqp\include;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\external\triangle;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\external\tetgen;F:\Projects\Repos\IPC-master\external\libigl\external\glad\include;F:\Projects\Repos\IPC-master\external\libigl\external\glfw\include;F:\Projects\Repos\IPC-master\external\libigl\external\libigl-imgui\..\imgui;F:\Projects\Repos\IPC-master\external\libigl\external\libigl-imgui\.;F:\Projects\Repos\IPC-master\external\libigl\external\libigl-imgui\..;F:\Projects\Repos\IPC-master\external\libigl\external\libigl-imgui\..\imgui\examples;F:\Projects\Repos\IPC-master\external\libigl\external\stb;F:\Projects\Repos\IPC-master\build\external\libigl\stb_image;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\external\predicates;F:\Projects\Repos\IPC-master\external\libigl\external\predicates;F:\Projects\Repos\IPC-master\build\external\libigl\predicates;F:\Projects\Repos\IPC-master\external\ccd-wrapper\src;F:\Projects\Repos\IPC-master\external\ccd-wrapper\external\Floating-Point-Root-Finder\include;F:\Projects\Repos\IPC-master\build\external\ccd-wrapper\external\Tight-Inclusion\include;F:\Projects\Repos\IPC-master\external\amgcl;F:\Projects\Repos\IPC-master\external\MshIO\include;F:\Projects\Repos\IPC-master\external\filesystem\include;F:\Projects\Repos\IPC-master\external\cli11\include;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\include;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\external\eigen;F:\Projects\Repos\IPC-master\external\spdlog\include;F:\SDK\boost\1.76.0;F:\SDK\USD\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>F:\SDK\IPC\lib\IPCd.lib;F:\SDK\USD\lib\tbb.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_PREDICATES;USE_SCALAR_IMPLEMENTATION;DIM=3;__STDC_FORMAT_MACROS;LINSYSSOLVER_USE_CHOLMOD;USE_AMGCL;USE_CHOLMOD;NOMINMAX;LIBIGL_WITH_PREDICATES;CCD_WRAPPER_WITH_FPRF;CCD_WRAPPER_WITH_TIGHT_INCLUSION;__TBB_NO_IMPLICIT_LINKAGE=1;_USE_MATH_DEFINES;_VARIADIC_MAX=10;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>F:\Projects\Repos\IPC-master\src;F:\Projects\Repos\IPC-master\src\Energy;F:\Projects\Repos\IPC-master\src\Energy\Physics_Elasticity;F:\Projects\Repos\IPC-master\src\Energy\Geometry_Isometry;F:\Projects\Repos\IPC-master\src\Energy\Connectivity;F:\Projects\Repos\IPC-master\src\Energy\Collision;F:\Projects\Repos\IPC-master\src\CollisionObject;F:\Projects\Repos\IPC-master\src\CCD;F:\Projects\Repos\IPC-master\src\Utils;F:\Projects\Repos\IPC-master\src\Utils\SVD;F:\Projects\Repos\IPC-master\src\LinSysSolver;F:\SDK\Suitesparse\SPQR\include;F:\SDK\Suitesparse\SuiteSparse_config\include;F:\SDK\Suitesparse\metis\include;F:\Projects\Repos\IPC-master\external\osqp\include;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\external\triangle;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\external\tetgen;F:\Projects\Repos\IPC-master\external\libigl\external\glad\include;F:\Projects\Repos\IPC-master\external\libigl\external\glfw\include;F:\Projects\Repos\IPC-master\external\libigl\external\libigl-imgui\..\imgui;F:\Projects\Repos\IPC-master\external\libigl\external\libigl-imgui\.;F:\Projects\Repos\IPC-master\external\libigl\external\libigl-imgui\..;F:\Projects\Repos\IPC-master\external\libigl\external\libigl-imgui\..\imgui\examples;F:\Projects\Repos\IPC-master\external\libigl\external\stb;F:\Projects\Repos\IPC-master\build\external\libigl\stb_image;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\external\predicates;F:\Projects\Repos\IPC-master\external\libigl\external\predicates;F:\Projects\Repos\IPC-master\build\external\libigl\predicates;F:\Projects\Repos\IPC-master\external\ccd-wrapper\src;F:\Projects\Repos\IPC-master\external\ccd-wrapper\external\Floating-Point-Root-Finder\include;F:\Projects\Repos\IPC-master\build\external\ccd-wrapper\external\Tight-Inclusion\include;F:\Projects\Repos\IPC-master\external\amgcl;F:\Projects\Repos\IPC-master\external\MshIO\include;F:\Projects\Repos\IPC-master\external\filesystem\include;F:\Projects\Repos\IPC-master\external\cli11\include;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\include;F:\Projects\Repos\IPC-master\external\libigl\cmake\..\external\eigen;F:\Projects\Repos\IPC-master\external\spdlog\include;F:\SDK\USD\include;F:\SDK\USD\include\boost-1_76\;F:\Python\3810\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>F:\SDK\IPC\lib\IPC.lib;F:\SDK\USD\lib\tbb.lib;F:\Python\3810\libs\python38.lib;tf.lib;sdf.lib;usd.lib;usdGeom.lib;ar.lib;vt.lib;gf.lib;boost_python38-vc142-mt-x64-1_76.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\SDK\USD\lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(OutDir)$(TargetName)$(TargetExt)" "F:/SDK/IPC/bin/ipcplay.exe"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="IPCOffline.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

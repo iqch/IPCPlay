@@ -3,9 +3,60 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usdTetraMesh", "usdTetraMesh\usdTetraMesh.vcxproj", "{AD2EAF9D-5FB8-4E60-B8FE-B390479C0FAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "USD SUPPORT", "USD SUPPORT", "{A918B45A-010D-4BD8-A369-CE99F4D4AC6D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pyUsdTetraMesh", "pyUsdTetraMesh\pyUsdTetraMesh.vcxproj", "{E8282DB6-9DCB-4443-BBBA-F67E1B2E639F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hdUsdTetraMesh", "hdUsdTetraMesh\hdUsdTetraMesh.vcxproj", "{ACD855CC-C53B-4FD1-816E-A74FC8814078}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IPCOffline", "IPCOffline\IPCOffline.vcxproj", "{70B6A513-B4BE-42BE-AFF8-26CFEE40BBAD}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Dbg|x64 = Dbg|x64
+		Debug|x64 = Debug|x64
+		Optimized|x64 = Optimized|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD2EAF9D-5FB8-4E60-B8FE-B390479C0FAC}.Dbg|x64.ActiveCfg = Release|x64
+		{AD2EAF9D-5FB8-4E60-B8FE-B390479C0FAC}.Debug|x64.ActiveCfg = Release|x64
+		{AD2EAF9D-5FB8-4E60-B8FE-B390479C0FAC}.Optimized|x64.ActiveCfg = Optimized|x64
+		{AD2EAF9D-5FB8-4E60-B8FE-B390479C0FAC}.Optimized|x64.Build.0 = Optimized|x64
+		{AD2EAF9D-5FB8-4E60-B8FE-B390479C0FAC}.Release|x64.ActiveCfg = Release|x64
+		{AD2EAF9D-5FB8-4E60-B8FE-B390479C0FAC}.Release|x64.Build.0 = Release|x64
+		{E8282DB6-9DCB-4443-BBBA-F67E1B2E639F}.Dbg|x64.ActiveCfg = Debug|x64
+		{E8282DB6-9DCB-4443-BBBA-F67E1B2E639F}.Dbg|x64.Build.0 = Debug|x64
+		{E8282DB6-9DCB-4443-BBBA-F67E1B2E639F}.Debug|x64.ActiveCfg = Debug|x64
+		{E8282DB6-9DCB-4443-BBBA-F67E1B2E639F}.Debug|x64.Build.0 = Debug|x64
+		{E8282DB6-9DCB-4443-BBBA-F67E1B2E639F}.Optimized|x64.ActiveCfg = Release|x64
+		{E8282DB6-9DCB-4443-BBBA-F67E1B2E639F}.Release|x64.ActiveCfg = Release|x64
+		{E8282DB6-9DCB-4443-BBBA-F67E1B2E639F}.Release|x64.Build.0 = Release|x64
+		{ACD855CC-C53B-4FD1-816E-A74FC8814078}.Dbg|x64.ActiveCfg = Debug|x64
+		{ACD855CC-C53B-4FD1-816E-A74FC8814078}.Dbg|x64.Build.0 = Debug|x64
+		{ACD855CC-C53B-4FD1-816E-A74FC8814078}.Debug|x64.ActiveCfg = Debug|x64
+		{ACD855CC-C53B-4FD1-816E-A74FC8814078}.Debug|x64.Build.0 = Debug|x64
+		{ACD855CC-C53B-4FD1-816E-A74FC8814078}.Optimized|x64.ActiveCfg = Release|x64
+		{ACD855CC-C53B-4FD1-816E-A74FC8814078}.Release|x64.ActiveCfg = Release|x64
+		{ACD855CC-C53B-4FD1-816E-A74FC8814078}.Release|x64.Build.0 = Release|x64
+		{70B6A513-B4BE-42BE-AFF8-26CFEE40BBAD}.Dbg|x64.ActiveCfg = Debug|x64
+		{70B6A513-B4BE-42BE-AFF8-26CFEE40BBAD}.Dbg|x64.Build.0 = Debug|x64
+		{70B6A513-B4BE-42BE-AFF8-26CFEE40BBAD}.Debug|x64.ActiveCfg = Debug|x64
+		{70B6A513-B4BE-42BE-AFF8-26CFEE40BBAD}.Debug|x64.Build.0 = Debug|x64
+		{70B6A513-B4BE-42BE-AFF8-26CFEE40BBAD}.Optimized|x64.ActiveCfg = Optimized|x64
+		{70B6A513-B4BE-42BE-AFF8-26CFEE40BBAD}.Optimized|x64.Build.0 = Optimized|x64
+		{70B6A513-B4BE-42BE-AFF8-26CFEE40BBAD}.Release|x64.ActiveCfg = Release|x64
+		{70B6A513-B4BE-42BE-AFF8-26CFEE40BBAD}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD2EAF9D-5FB8-4E60-B8FE-B390479C0FAC} = {A918B45A-010D-4BD8-A369-CE99F4D4AC6D}
+		{E8282DB6-9DCB-4443-BBBA-F67E1B2E639F} = {A918B45A-010D-4BD8-A369-CE99F4D4AC6D}
+		{ACD855CC-C53B-4FD1-816E-A74FC8814078} = {A918B45A-010D-4BD8-A369-CE99F4D4AC6D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {168A7487-B683-4056-89A7-DA34B2BE3F66}
