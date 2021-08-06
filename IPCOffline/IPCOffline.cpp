@@ -15,6 +15,7 @@
 #include <spdlog/spdlog.h>
 
 #define IPC_API __declspec(dllimport)
+
 #include "Solver.hpp"
 
 #define BOOST_ALL_NO_LIB
@@ -74,24 +75,32 @@ void printProgressBar(
     std::cout.flush();
 }
 
+Eigen::Matrix<double, 3, 1> FORCE;
 
+Eigen::Matrix<double, 3, 1> antigravity(const Eigen::Matrix<double, 3, 1>&)
+{
+    return FORCE;
+};
 
 int main(int argc, char* argv[])
 {
+
+    FORCE.Zero();
+    //FORCE[1] = -9.80665;
+
 #if defined(USE_TBB) && defined(TBB_NUM_THREADS)
     tbb::task_scheduler_init init(TBB_NUM_THREADS);
 #endif
-
 
     spdlog::set_level(static_cast<spdlog::level::level_enum>(0));
 
     std::string  input = argv[1];
 
-    IPC::Solver<DIM> solver(input);
+    IPC::Solver solver(input, antigravity);
 
     if (!solver.valid)
     {
-        spdlog::error("failed to load script/mesh!");
+        spdlog::error("failed to load scene!");
         return -1;
     };   
 
@@ -120,7 +129,7 @@ int main(int argc, char* argv[])
 
     for (int coI = 0; coI < solver.config.collisionObjects.size(); ++coI)
     {
-        IPC::CollisionObject<DIM>& C = *solver.config.collisionObjects[coI];
+        IPC::CollisionObject& C = *solver.config.collisionObjects[coI];
 
         std::string name("/CollisionObject_");
         name += C.name;
@@ -172,7 +181,7 @@ int main(int argc, char* argv[])
 
     for(int mcoI = 0; mcoI < solver.config.meshCollisionObjects.size(); ++mcoI)
     {
-        IPC::CollisionObject<DIM>& C = *solver.config.meshCollisionObjects[mcoI];
+        IPC::CollisionObject& C = *solver.config.meshCollisionObjects[mcoI];
 
         std::string name("/CollisionMesh_");
         name += C.name;
@@ -221,7 +230,6 @@ int main(int argc, char* argv[])
         mesh.ComputeExtent(mesh_P, &extent);
         mesh_ext_attr.Set(extent, 0);
     };
-
 
     SdfPath meshpath("/Geometry");
 
@@ -293,6 +301,9 @@ int main(int argc, char* argv[])
         spdlog::info("SET {:s} :: {:d}", sname, FCNUM);
     };
 
+    // ...TETRAMESHES
+
+    // INITIAL EXPORT
     stage->GetRootLayer()->Export(sp);
 
     int previousSaveIter = std::numeric_limits<int>::min() / 2;
